@@ -1,0 +1,174 @@
+*{
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  color: rgb(191, 193, 200);
+  background-color: #262936;
+}
+nav{
+  background-color: #1E202B ;
+}
+h1{
+  font-size: 16px;
+  font-weight: 700;
+}
+.navbar-brand p{
+  font-size: 10px;
+  font-weight: 300;
+}
+.navbar-nav a{
+  color: white;
+  font-size: 14px;
+  padding: 5px 25px !important;
+  transition: all 0.3s ease 0s;;
+}
+@media(min-width:991px){
+  .navbar-nav .nav-link.active{
+  border: 1px solid rgb(0, 154, 216) !important;
+  border-radius: 20px !important;
+  color: rgb(0, 154, 216) !important;
+  }
+}
+@media(max-width:991px){
+  .navbar-nav .nav-link.active{
+  color: rgb(0, 154, 216) !important;
+}
+.navbar-nav{
+  background-color: #262936;
+  width: 75%;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+.nav-item{
+  padding: 15px;
+}
+.nav-item:not(:last-child){
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+}
+}
+.nav-link:focus, .nav-link:hover {
+  color: rgb(0, 154, 216) !important;
+}
+.navbar-toggler {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-toggler i{
+  transition: 0.3s;
+}
+.navbar-toggler:hover i{
+  color: rgb(0, 154, 216) !important;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+.date{
+  padding: 90px 0;
+  background-image: url(../imge/earth-planet-stars-blue-marble-wallpaper-c8d67de820a04c18906cf13e4802647a.jpg);
+  background-position: top center;
+  background-size: cover;
+}
+.search{
+  background-color: rgb(30 32 43 / 95%);;
+  border: none;
+}
+.search input{
+  background-color: transparent ;
+  font-size: 14px;
+  color: white !important;
+}
+.search input:focus{
+  background-color: transparent;
+  color: white !important;
+}
+
+.search input::placeholder{
+  color: #BFC1C8;
+}
+
+.dayOne,.dayThree{
+  background-color: #2D303D;
+}
+.dayTwo{
+  background-color: #222531;
+}
+.contentDayOne,.contentDayThree{
+  background-color: rgb(50 53 68 / 95%);
+}
+.contentDayTwo{
+  background-color: rgb(38 41 54 / 95%);;
+}
+.stat{
+  color: rgb(0, 154, 216);
+  font-size: 14px;
+}
+.contentUl{
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+footer{
+  background-color: #262936;
+  padding: 45px 0;
+}
+.ulFoteer li{
+  padding: 11px;
+  background-color: #1E202B;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.ulFoteer li i{
+  font-size: 20px;
+  transition: 0.3s;
+  color: rgb(0, 154, 216);
+}
+.ulFoteer li:hover{
+background-color: rgb(0, 154, 216);
+}
+.ulFoteer li:hover i{
+color: white;
+}
+footer p{
+  font-size: 14px;
+}
+
+.contact-frame{
+  background-color: #262936;
+}
+.contact-sec{
+  background-color: #1E202B;
+}
+.fs-14{
+  font-size: 14px;
+}
+.input-contact{
+  background-color: #262936;
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+  color: #BFC1C8 !important;
+}
+.input-contact:focus{
+  background-color:#262936 ;
+  color: #BFC1C8 !important;
+  color: white !important;
+}
+.input-contact::placeholder{
+  color: #BFC1C8 !important;
+}
+.your-loc{
+  background-color: #1E202B;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg p-4">
+  <div class="container">
+    <a class="navbar-brand d-flex text-white" href="#">
+      <img src="imge/logo.png" alt="weather">
+      <div class="ps-2">
+        <h1 class="mb-1">Weather</h1>
+        <p class="m-0">tagline goes here</p>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Live Cameras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="bg-secondary date">
+  <div class="container">
+    <div class="search form-control mb-5 rounded-5 d-flex justify-content-between">
+    <input class="form-control border-0 shadow-none " type="text" placeholder="Find your location..." id="btn">
+    <button class="btn btn-primary rounded-5" id="searching">Find</button>
+    </div>
+  <div class="row g-4" id="row"></div>
+  </div>
+</section>
+<section class="your-loc">
+  <div class="container  pt-5 pb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+      <div class="lay d-flex justify-content-center align-items-center flex-column">
+        <p class="display-5 text-white">انقر كليك هجيبلك موقعك</p>
+       <button class="btn btn-primary rounded-circle " id="pos"><i class="fa-solid fa-location-dot"></i></button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="lay" id="tath">
+         <iframe class="w-100 rounded-4" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d27628.787945417647!2d${position.coords.longitude}!3d${position.coords.latitude}!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1704648149440!5m2!1sar!2seg" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class=" col-md-6">
+    <div class="search form-control mb-5 rounded-5 d-flex justify-content-between ">
+    <input class="form-control border-0 shadow-none " type="text" placeholder="Enter your email to subscribe...">
+    <button class="btn btn-primary rounded-5">Find</button>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <ul class="d-flex  ulFoteer justify-content-md-end p-0">
+      <li><i class="fa-brands fa-facebook"></i></li>
+      <li><i class="fa-brands fa-twitter"></i></li>
+      <li><i class="fa-brands fa-google"></i></li>
+      <li><i class="fa-brands fa-youtube"></i></li>
+    </ul>
+  </div>
+    </div>
+  <p>Copyright 2024 Company name. Designed by Themezy. All rights reserved</p>
+  </div>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
